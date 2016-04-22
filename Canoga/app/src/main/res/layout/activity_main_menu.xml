@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canoga"
+        android:id="@+id/canogaTitle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_display_4_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:id="@+id/newButton"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:onClick="NewGame"
+        android:nestedScrollingEnabled="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Game"
+        android:id="@+id/loadButton"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:onClick="LoadGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/exitButton"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:onClick="ExitGame" />
+
+</LinearLayout>

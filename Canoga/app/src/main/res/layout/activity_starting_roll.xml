@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center"
+    android:onClick="Roll">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Human"
+            android:id="@+id/humanTitle"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/abc_text_size_display_3_material" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/humanRoll1"
+                android:textSize="@dimen/abc_text_size_display_2_material" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        "
+                android:id="@+id/humanSpace"
+                android:textSize="@dimen/abc_text_size_display_2_material" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/humanRoll2"
+                android:textSize="@dimen/abc_text_size_display_2_material" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:id="@+id/humanTotal"
+            android:textSize="@dimen/abc_text_size_display_2_material"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Winner"
+            android:id="@+id/humanWinner"
+            android:textSize="@dimen/abc_text_size_display_2_material"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        android:id="@+id/rollButton"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:onClick="roll" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:id="@+id/continueButton"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:visibility="gone"
+        android:onClick="cont" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer"
+            android:id="@+id/computerTitle"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/abc_text_size_display_3_material" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/computerRoll1"
+                android:textSize="@dimen/abc_text_size_display_2_material" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        "
+                android:id="@+id/computerSpace"
+                android:textSize="@dimen/abc_text_size_display_2_material" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/computerRoll2"
+                android:textSize="@dimen/abc_text_size_display_2_material" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:"
+            android:id="@+id/computerTotal"
+            android:textSize="@dimen/abc_text_size_display_2_material"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Winner"
+            android:id="@+id/computerWinner"
+            android:textSize="@dimen/abc_text_size_display_2_material"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
